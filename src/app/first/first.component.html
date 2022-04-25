@@ -1,0 +1,11 @@
+Enter two numbers
+<br><br>
+<form>
+    <input type="number" [(ngModel)]="firstnumber" [ngModelOptions]="{standalone: true}">
+    <br><br>
+    <input type="number" [(ngModel)]="secoundnumber" [ngModelOptions]="{standalone: true}">
+    <br><br>
+    
+</form>
+<button (click)="Calc()">ADD</button>
+<app-secound [sum]="Total"></app-secound>
